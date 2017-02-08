@@ -1,4 +1,4 @@
-Jin, a 2d game engine for simplifying game making process. 
+Jin, a 2d game engine in C++ for simplifying game making process. 
 
 Moduals
 --------
@@ -6,5 +6,20 @@ Graphics
 2D physics 
 Audio 
 Networking
+
+Requirement
+--------
+SDL2 
+SDL2_image 
+OpenAL 
+Box2d
+
+Build
+--------
+
+
+
+
+
 
 
