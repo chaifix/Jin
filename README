@@ -1,4 +1,5 @@
-Jin, a 2d game engine in C++ for simplifying game making process. 
+Jin is a 2d game engine in C++ for simplifying game making 
+process. The engine use lua as script.
 
 Moduals
 --------
@@ -7,19 +8,15 @@ Graphics
 Audio 
 Networking
 
+Purposes
+--------
+* Blitting and pixel buffers, wrapped around the windows API
+* 16bit audio callback, wrapped around the windows API
+* A very basic collision system (which I may or may not use)
+
 Requirement
 --------
-SDL2 
-SDL2_image 
-OpenAL 
-Box2d
+SDL2
 
 Build
 --------
-
-
-
-
-
-
-
