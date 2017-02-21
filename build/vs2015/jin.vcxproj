@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A3E35ECA-62EB-45CE-8152-674FBC7F7A3B}</ProjectGuid>
+    <RootNamespace>jin</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\..\bin</OutDir>
+    <ExtensionsToDeleteOnClean>*.cdf;*.cache;*.obj;*.obj.enc;*.ilk;*.ipdb;*.iobj;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)..\..\bin</OutDir>
+    <ExtensionsToDeleteOnClean>*.cdf;*.cache;*.obj;*.obj.enc;*.ilk;*.ipdb;*.iobj;*.resources;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;*.tlog;*.manifest;*.res;*.pch;*.exp;*.idb;*.rep;*.xdc;*.pdb;*_manifest.rc;*.bsc;*.sbr;*.xml;*.metagen;*.bi</ExtensionsToDeleteOnClean>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\;C:\Users\chai\Documents\VC_Libs\SDL2-2.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;SDL2main.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\chai\Documents\VC_Libs\SDL2-2.0.5\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\;$(SolutionDir)..\..\deps\SDL2-2.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;SDL2main.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\..\deps\SDL2-2.0.5\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\jinc.cpp" />
+    <ClCompile Include="..\..\src\libs\GLEE\GLee.c" />
+    <ClCompile Include="..\..\src\libs\lua51\lapi.c" />
+    <ClCompile Include="..\..\src\libs\lua51\lauxlib.c" />
+    <ClCompile Include="..\..\src\libs\lua51\lbaselib.c" />
+    <ClCompile Include="..\..\src\libs\lua51\lcode.c" />
+    <ClCompile Include="..\..\src\libs\lua51\ldblib.c" />
+    <ClCompile Include="..\..\src\libs\lua51\ldebug.c" />
+    <ClCompile Include="..\..\src\libs\lua51\ldo.c" />
+    <ClCompile Include="..\..\src\libs\lua51\ldump.c" />
+    <ClCompile Include="..\..\src\libs\lua51\lfunc.c" />
+    <ClCompile Include="..\..\src\libs\lua51\lgc.c" />
+    <ClCompile Include="..\..\src\libs\lua51\linit.c" />
+    <ClCompile Include="..\..\src\libs\lua51\liolib.c" />
+    <ClCompile Include="..\..\src\libs\lua51\llex.c" />
+    <ClCompile Include="..\..\src\libs\lua51\lmathlib.c" />
+    <ClCompile Include="..\..\src\libs\lua51\lmem.c" />
+    <ClCompile Include="..\..\src\libs\lua51\loadlib.c" />
+    <ClCompile Include="..\..\src\libs\lua51\lobject.c" />
+    <ClCompile Include="..\..\src\libs\lua51\lopcodes.c" />
+    <ClCompile Include="..\..\src\libs\lua51\loslib.c" />
+    <ClCompile Include="..\..\src\libs\lua51\lparser.c" />
+    <ClCompile Include="..\..\src\libs\lua51\lstate.c" />
+    <ClCompile Include="..\..\src\libs\lua51\lstring.c" />
+    <ClCompile Include="..\..\src\libs\lua51\lstrlib.c" />
+    <ClCompile Include="..\..\src\libs\lua51\ltable.c" />
+    <ClCompile Include="..\..\src\libs\lua51\ltablib.c" />
+    <ClCompile Include="..\..\src\libs\lua51\ltm.c" />
+    <ClCompile Include="..\..\src\libs\lua51\lundump.c" />
+    <ClCompile Include="..\..\src\libs\lua51\lvm.c" />
+    <ClCompile Include="..\..\src\libs\lua51\lzio.c" />
+    <ClCompile Include="..\..\src\libs\lua51\print.c" />
+    <ClCompile Include="..\..\src\libs\stb\stb_vorbis.c" />
+    <ClCompile Include="..\..\src\lua\m_audio.cpp" />
+    <ClCompile Include="..\..\src\lua\m_event.cpp" />
+    <ClCompile Include="..\..\src\lua\m_font.cpp" />
+    <ClCompile Include="..\..\src\lua\m_graphics.cpp" />
+    <ClCompile Include="..\..\src\lua\m_keyboard.cpp" />
+    <ClCompile Include="..\..\src\lua\m_mouse.cpp" />
+    <ClCompile Include="..\..\src\lua\m_net.cpp" />
+    <ClCompile Include="..\..\src\lua\m_timer.cpp" />
+    <ClCompile Include="..\..\src\lua\o_Canvas.cpp" />
+    <ClCompile Include="..\..\src\lua\o_Image.cpp" />
+    <ClCompile Include="..\..\src\lua\o_Quad.cpp" />
+    <ClCompile Include="..\..\src\lua\o_Sound.cpp" />
+    <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\render\canvas.cpp" />
+    <ClCompile Include="..\..\src\render\color.cpp" />
+    <ClCompile Include="..\..\src\render\font.cpp" />
+    <ClCompile Include="..\..\src\render\geometry.cpp" />
+    <ClCompile Include="..\..\src\render\graphics.cpp" />
+    <ClCompile Include="..\..\src\render\image.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\core\game.h" />
+    <ClInclude Include="..\..\src\libs\GLEE\GLee.h" />
+    <ClInclude Include="..\..\src\libs\lua51\lapi.h" />
+    <ClInclude Include="..\..\src\libs\lua51\lauxlib.h" />
+    <ClInclude Include="..\..\src\libs\lua51\lcode.h" />
+    <ClInclude Include="..\..\src\libs\lua51\ldebug.h" />
+    <ClInclude Include="..\..\src\libs\lua51\ldo.h" />
+    <ClInclude Include="..\..\src\libs\lua51\lfunc.h" />
+    <ClInclude Include="..\..\src\libs\lua51\lgc.h" />
+    <ClInclude Include="..\..\src\libs\lua51\llex.h" />
+    <ClInclude Include="..\..\src\libs\lua51\llimits.h" />
+    <ClInclude Include="..\..\src\libs\lua51\lmem.h" />
+    <ClInclude Include="..\..\src\libs\lua51\lobject.h" />
+    <ClInclude Include="..\..\src\libs\lua51\lopcodes.h" />
+    <ClInclude Include="..\..\src\libs\lua51\lparser.h" />
+    <ClInclude Include="..\..\src\libs\lua51\lstate.h" />
+    <ClInclude Include="..\..\src\libs\lua51\lstring.h" />
+    <ClInclude Include="..\..\src\libs\lua51\ltable.h" />
+    <ClInclude Include="..\..\src\libs\lua51\ltm.h" />
+    <ClInclude Include="..\..\src\libs\lua51\lua.h" />
+    <ClInclude Include="..\..\src\libs\lua51\luaconf.h" />
+    <ClInclude Include="..\..\src\libs\lua51\lualib.h" />
+    <ClInclude Include="..\..\src\libs\lua51\lundump.h" />
+    <ClInclude Include="..\..\src\libs\lua51\lvm.h" />
+    <ClInclude Include="..\..\src\libs\lua51\lzio.h" />
+    <ClInclude Include="..\..\src\libs\stb\stb_image.h" />
+    <ClInclude Include="..\..\src\render\canvas.h" />
+    <ClInclude Include="..\..\src\render\color.h" />
+    <ClInclude Include="..\..\src\render\drawable.h" />
+    <ClInclude Include="..\..\src\render\font.h" />
+    <ClInclude Include="..\..\src\render\geometry.h" />
+    <ClInclude Include="..\..\src\render\graphics.h" />
+    <ClInclude Include="..\..\src\render\image.h" />
+    <ClInclude Include="..\..\src\render\rect.h" />
+    <ClInclude Include="..\..\src\render\sprite.h" />
+    <ClInclude Include="..\..\src\utils\timer.h" />
+    <ClInclude Include="..\..\src\utils\vec2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\..\src\res\font.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\src\res\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\libs\lua51\Makefile" />
+    <None Include="..\..\src\lua\boot.lua" />
+    <None Include="..\..\src\lua\debug.lua" />
+    <None Include="..\..\src\lua\init.lua" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

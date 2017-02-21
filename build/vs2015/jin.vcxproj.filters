@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{f3e85b81-1688-49e4-b85c-65d99ddafad9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\audio">
+      <UniqueIdentifier>{4e3c38b2-8076-4927-993d-e59607d4256a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{7467bc99-3a63-4b92-b3ab-b5a3d86ead1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\input">
+      <UniqueIdentifier>{14253521-dbe9-4289-b100-47b4deb41331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs">
+      <UniqueIdentifier>{269451af-b8e9-451f-940a-9b679e6116d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\net">
+      <UniqueIdentifier>{fe12237c-986f-42f3-86d9-1fe848e1e058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\physics">
+      <UniqueIdentifier>{c2e02dd4-1d1c-4fc0-9b3b-2e2ff84242d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\render">
+      <UniqueIdentifier>{23033979-4942-4f08-8a1d-ecc0dec442b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\res">
+      <UniqueIdentifier>{0340fbad-0c07-4923-afd2-183424c70967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils">
+      <UniqueIdentifier>{e9abe7cb-bbbf-4315-a9ab-285b52efa3b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\GLee">
+      <UniqueIdentifier>{43dc399e-6dc9-4997-9a64-130e48c1c041}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\stb">
+      <UniqueIdentifier>{36e4150d-c477-47c1-a317-ea65f6f64b5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\lua51">
+      <UniqueIdentifier>{5b7e6bcc-7957-4d7e-b660-d260726da1c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lua">
+      <UniqueIdentifier>{1a439a13-00fb-451d-a29e-3610c1928d58}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\canvas.cpp">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\color.cpp">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\font.cpp">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\geometry.cpp">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\graphics.cpp">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\image.cpp">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\GLEE\GLee.c">
+      <Filter>src\libs\GLee</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\lapi.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\lauxlib.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\lbaselib.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\lcode.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\ldblib.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\ldebug.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\ldo.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\ldump.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\lfunc.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\lgc.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\linit.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\liolib.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\llex.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\lmathlib.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\lmem.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\loadlib.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\lobject.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\lopcodes.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\loslib.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\lparser.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\lstate.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\lstring.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\lstrlib.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\ltable.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\ltablib.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\ltm.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\lundump.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\lvm.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\lzio.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\lua51\print.c">
+      <Filter>src\libs\lua51</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\stb\stb_vorbis.c">
+      <Filter>src\libs\stb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\jinc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\m_audio.cpp">
+      <Filter>src\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\m_event.cpp">
+      <Filter>src\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\m_font.cpp">
+      <Filter>src\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\m_graphics.cpp">
+      <Filter>src\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\m_keyboard.cpp">
+      <Filter>src\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\m_mouse.cpp">
+      <Filter>src\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\m_net.cpp">
+      <Filter>src\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\m_timer.cpp">
+      <Filter>src\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\o_Canvas.cpp">
+      <Filter>src\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\o_Image.cpp">
+      <Filter>src\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\o_Quad.cpp">
+      <Filter>src\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\o_Sound.cpp">
+      <Filter>src\lua</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\render\canvas.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\color.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\drawable.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\font.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\geometry.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\graphics.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\image.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\rect.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\sprite.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\timer.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\utils\vec2.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\GLEE\GLee.h">
+      <Filter>src\libs\GLee</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\lapi.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\lauxlib.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\lcode.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\ldebug.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\ldo.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\lfunc.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\lgc.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\llex.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\llimits.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\lmem.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\lobject.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\lopcodes.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\lparser.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\lstate.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\lstring.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\ltable.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\ltm.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\lua.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\luaconf.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\lualib.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\lundump.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\lvm.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\lua51\lzio.h">
+      <Filter>src\libs\lua51</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\stb\stb_image.h">
+      <Filter>src\libs\stb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\game.h">
+      <Filter>src\core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\..\src\res\font.ttf">
+      <Filter>src\res</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\src\res\icon.png">
+      <Filter>src\res</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\libs\lua51\Makefile">
+      <Filter>src\libs\lua51</Filter>
+    </None>
+    <None Include="..\..\src\lua\boot.lua">
+      <Filter>src\lua</Filter>
+    </None>
+    <None Include="..\..\src\lua\debug.lua">
+      <Filter>src\lua</Filter>
+    </None>
+    <None Include="..\..\src\lua\init.lua">
+      <Filter>src\lua</Filter>
+    </None>
+  </ItemGroup>
+</Project>
