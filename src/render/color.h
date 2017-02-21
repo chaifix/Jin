@@ -7,7 +7,7 @@ class Color
 {
 public: 
     int r, g ,b, a;
-}// Color 
+};
 }// jin 
 
 #endif

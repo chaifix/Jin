@@ -14,6 +14,6 @@ function jin.update(dt)
 
 end 
 
-function jin.draw() 
+function jin.draw()
 
 end

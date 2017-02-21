@@ -4,7 +4,6 @@
 #include "geometry.h"
 #include "canvas.h"
 #include "image.h"
-
 namespace jin 
 {
 void drawColor(const Color& col);   // set draw color 

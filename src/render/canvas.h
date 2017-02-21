@@ -12,10 +12,10 @@ public:
     void draw(int x = 0, int y = 0, int scale = 1);
     void draw(const Rect& src, const Rect& dst);
 private:
-    GLuint fbo; 
-    GLuint img; 
-    static GLuint preCanvas;    // previous canvas to render 
-}// Canvas
-}// jin 
+    //GLuint fbo; 
+    //GLuint img; 
+    //static GLuint preCanvas;    // previous canvas to render 
+};
+}// jin
 
 #endif

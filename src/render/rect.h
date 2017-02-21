@@ -7,6 +7,6 @@ class Rect
 {
 public: 
     int x, y, w, h;
-}// Rect
+};
 }// jin 
 #endif

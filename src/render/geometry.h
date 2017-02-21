@@ -3,7 +3,8 @@
 
 namespace jin 
 {
-void drawLine(int x, int y, int weight = 1); 
+void drawLine(int x, int y, int weight = 1);
+
 }
 
 #endif

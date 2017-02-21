@@ -11,7 +11,7 @@ public:
     virtual void draw() = 0 ; 
     void run();
 private:  
-}// Game 
-}// jin 
+};
+}
 
 #endif

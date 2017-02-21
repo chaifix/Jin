@@ -6,7 +6,7 @@ class _Drawable
 {
 public: 
 
-}// _Drawable 
+};
 }// jin 
 
 #endif
