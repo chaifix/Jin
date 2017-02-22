@@ -3,7 +3,6 @@
 
 int main(int argc, char* argv[])
 {
-	SDL_Rect c;
+    
     return 0; 
-	
 }

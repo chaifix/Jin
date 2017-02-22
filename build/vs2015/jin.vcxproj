@@ -169,7 +169,7 @@
     <ClCompile Include="..\..\src\lua\m_keyboard.cpp" />
     <ClCompile Include="..\..\src\lua\m_mouse.cpp" />
     <ClCompile Include="..\..\src\lua\m_net.cpp" />
-    <ClCompile Include="..\..\src\lua\m_timer.cpp" />
+    <ClCompile Include="..\..\src\lua\m_time.cpp" />
     <ClCompile Include="..\..\src\lua\o_Canvas.cpp" />
     <ClCompile Include="..\..\src\lua\o_Image.cpp" />
     <ClCompile Include="..\..\src\lua\o_Quad.cpp" />

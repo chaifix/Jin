@@ -186,9 +186,6 @@
     <ClCompile Include="..\..\src\lua\m_net.cpp">
       <Filter>src\lua</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_timer.cpp">
-      <Filter>src\lua</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\lua\o_Canvas.cpp">
       <Filter>src\lua</Filter>
     </ClCompile>
@@ -199,6 +196,9 @@
       <Filter>src\lua</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\lua\o_Sound.cpp">
+      <Filter>src\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\m_time.cpp">
       <Filter>src\lua</Filter>
     </ClCompile>
   </ItemGroup>
