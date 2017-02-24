@@ -2,7 +2,7 @@
 #define __JIN_DRAWABLE
 namespace jin 
 {
-class _Drawable
+class Drawable
 {
 public: 
 

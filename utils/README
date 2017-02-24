@@ -1,3 +1,2 @@
-* cembed.cpp for compile lua file to Cpp code. You passing the file modern and 
-  lua file, for example 
-    cembed    
+* cwrap.c for compile lua file to Cpp code.
+    

@@ -1,0 +1,9 @@
+#ifndef __$(u(filename))_$(u(postfix))_H
+#define __$(u(filename))_$(u(postfix))_H
+
+namespace jin 
+{
+const char $(filename) = "$(source)";
+}
+
+#endif
