@@ -1,30 +1,17 @@
 /**
-* Copyright (c) 2017 chai(neonum)
-*
-* This is a free software. You can redistribute it and/or modify it under the terms of
-* the GPL license. See LICENSE for details.
-*
-* Contact: shu_chai@163.com
-*
-* Description 
-* --------
-* 
-*   
-* 
-* 
-* Usage 
-* --------
-* 
-* 
-* 
-* 
+* filename 
+* postfix 
+* $()   cwrap field
+* u()   uppercase 
+* l()   lowercase 
+* c()   compile to c code 
+*  
 */
-#include <fstream> 
-using namespace std; 
 
-int main(int argc, char* argv[]) 
-{
+#include <stdio.h> 
+#include <string.h>
+
+int main() 
+{ 
     
-    
-    return 0; 
 }

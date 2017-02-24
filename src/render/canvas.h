@@ -1,10 +1,10 @@
 #ifndef __JIN_CANVAS_H
 #define __JIN_CANVAS_H
 #include "drawable.h"
-#include "rect.h"
+#include "quad.h"
 namespace jin
 {
-class Canvas: public _Drawable
+class Canvas: public Drawable
 {
 public: 
     void bind(); 

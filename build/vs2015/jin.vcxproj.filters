@@ -19,9 +19,6 @@
     <Filter Include="src\net">
       <UniqueIdentifier>{fe12237c-986f-42f3-86d9-1fe848e1e058}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\physics">
-      <UniqueIdentifier>{c2e02dd4-1d1c-4fc0-9b3b-2e2ff84242d5}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\render">
       <UniqueIdentifier>{23033979-4942-4f08-8a1d-ecc0dec442b5}</UniqueIdentifier>
     </Filter>
@@ -43,28 +40,13 @@
     <Filter Include="src\lua">
       <UniqueIdentifier>{1a439a13-00fb-451d-a29e-3610c1928d58}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{ecd5ec94-e989-4f8c-92df-ac279e32508b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\main.cpp">
       <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\render\canvas.cpp">
-      <Filter>src\render</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\render\color.cpp">
-      <Filter>src\render</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\render\font.cpp">
-      <Filter>src\render</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\render\geometry.cpp">
-      <Filter>src\render</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\render\graphics.cpp">
-      <Filter>src\render</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\render\image.cpp">
-      <Filter>src\render</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\libs\GLEE\GLee.c">
       <Filter>src\libs\GLee</Filter>
@@ -165,71 +147,74 @@
     <ClCompile Include="..\..\src\jinc.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_audio.cpp">
-      <Filter>src\lua</Filter>
+    <ClCompile Include="..\..\src\modules\m_audio.cpp">
+      <Filter>src\modules</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_event.cpp">
-      <Filter>src\lua</Filter>
+    <ClCompile Include="..\..\src\modules\m_event.cpp">
+      <Filter>src\modules</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_font.cpp">
-      <Filter>src\lua</Filter>
+    <ClCompile Include="..\..\src\modules\m_font.cpp">
+      <Filter>src\modules</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_graphics.cpp">
-      <Filter>src\lua</Filter>
+    <ClCompile Include="..\..\src\modules\m_graphics.cpp">
+      <Filter>src\modules</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_keyboard.cpp">
-      <Filter>src\lua</Filter>
+    <ClCompile Include="..\..\src\modules\m_keyboard.cpp">
+      <Filter>src\modules</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_mouse.cpp">
-      <Filter>src\lua</Filter>
+    <ClCompile Include="..\..\src\modules\m_mouse.cpp">
+      <Filter>src\modules</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_net.cpp">
-      <Filter>src\lua</Filter>
+    <ClCompile Include="..\..\src\modules\m_net.cpp">
+      <Filter>src\modules</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\lua\o_Canvas.cpp">
-      <Filter>src\lua</Filter>
+    <ClCompile Include="..\..\src\modules\m_time.cpp">
+      <Filter>src\modules</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\lua\o_Image.cpp">
-      <Filter>src\lua</Filter>
+    <ClCompile Include="..\..\src\modules\o_Canvas.cpp">
+      <Filter>src\modules</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\lua\o_Quad.cpp">
-      <Filter>src\lua</Filter>
+    <ClCompile Include="..\..\src\modules\o_Image.cpp">
+      <Filter>src\modules</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\lua\o_Sound.cpp">
-      <Filter>src\lua</Filter>
+    <ClCompile Include="..\..\src\modules\o_Quad.cpp">
+      <Filter>src\modules</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_time.cpp">
-      <Filter>src\lua</Filter>
+    <ClCompile Include="..\..\src\modules\o_Sound.cpp">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\canvas.cpp">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\color.cpp">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\font.cpp">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\graphics.cpp">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\image.cpp">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\quad.cpp">
+      <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\input\event.cpp">
+      <Filter>src\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\input\mouse.cpp">
+      <Filter>src\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\input\keyboard.cpp">
+      <Filter>src\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\render\jsl.cpp">
+      <Filter>src\render</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\src\render\canvas.h">
-      <Filter>src\render</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\render\color.h">
-      <Filter>src\render</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\render\drawable.h">
-      <Filter>src\render</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\render\font.h">
-      <Filter>src\render</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\render\geometry.h">
-      <Filter>src\render</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\render\graphics.h">
-      <Filter>src\render</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\render\image.h">
-      <Filter>src\render</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\render\rect.h">
-      <Filter>src\render</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\render\sprite.h">
-      <Filter>src\render</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\src\utils\timer.h">
       <Filter>src\utils</Filter>
     </ClInclude>
@@ -311,7 +296,49 @@
     <ClInclude Include="..\..\src\libs\stb\stb_image.h">
       <Filter>src\libs\stb</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\src\core\game.h">
+    <ClInclude Include="..\..\src\lua\boot.lua.h">
+      <Filter>src\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lua\debug.lua.h">
+      <Filter>src\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\lua\init.lua.h">
+      <Filter>src\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\canvas.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\color.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\drawable.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\font.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\graphics.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\image.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\quad.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\input\event.h">
+      <Filter>src\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\input\mouse.h">
+      <Filter>src\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\input\keyboard.h">
+      <Filter>src\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\render\jsl.h">
+      <Filter>src\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\core\fs.h">
       <Filter>src\core</Filter>
     </ClInclude>
   </ItemGroup>
@@ -328,6 +355,9 @@
   <ItemGroup>
     <None Include="..\..\src\libs\lua51\Makefile">
       <Filter>src\libs\lua51</Filter>
+    </None>
+    <None Include="..\..\src\lua\patern.cwrap">
+      <Filter>src\lua</Filter>
     </None>
     <None Include="..\..\src\lua\boot.lua">
       <Filter>src\lua</Filter>

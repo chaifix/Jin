@@ -8,8 +8,8 @@ class Image
 public: 
 
 private: 
-    GLuint img, fbo; 
-}
+    
+};
 } 
 
 #endif
