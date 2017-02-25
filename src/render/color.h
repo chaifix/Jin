@@ -3,9 +3,10 @@
 
 namespace jin 
 {
-struct Color 
-{ 
-    unsigned char r, g, b, a; 
+class Color
+{
+public: 
+    int r, g ,b, a;
 };
 }// jin 
 
