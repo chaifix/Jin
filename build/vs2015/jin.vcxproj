@@ -174,10 +174,10 @@
     <ClCompile Include="..\..\src\modules\m_mouse.cpp" />
     <ClCompile Include="..\..\src\modules\m_net.cpp" />
     <ClCompile Include="..\..\src\modules\m_time.cpp" />
-    <ClCompile Include="..\..\src\modules\o_Canvas.cpp" />
-    <ClCompile Include="..\..\src\modules\o_Image.cpp" />
-    <ClCompile Include="..\..\src\modules\o_Quad.cpp" />
-    <ClCompile Include="..\..\src\modules\o_Sound.cpp" />
+    <ClCompile Include="..\..\src\modules\m_Canvas.cpp" />
+    <ClCompile Include="..\..\src\modules\m_Image.cpp" />
+    <ClCompile Include="..\..\src\modules\m_Quad.cpp" />
+    <ClCompile Include="..\..\src\modules\m_Sound.cpp" />
     <ClCompile Include="..\..\src\render\canvas.cpp" />
     <ClCompile Include="..\..\src\render\color.cpp" />
     <ClCompile Include="..\..\src\render\font.cpp" />

@@ -171,18 +171,6 @@
     <ClCompile Include="..\..\src\modules\m_time.cpp">
       <Filter>src\modules</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\modules\o_Canvas.cpp">
-      <Filter>src\modules</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\modules\o_Image.cpp">
-      <Filter>src\modules</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\modules\o_Quad.cpp">
-      <Filter>src\modules</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\modules\o_Sound.cpp">
-      <Filter>src\modules</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\render\canvas.cpp">
       <Filter>src\render</Filter>
     </ClCompile>
@@ -212,6 +200,18 @@
     </ClCompile>
     <ClCompile Include="..\..\src\render\jsl.cpp">
       <Filter>src\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\m_Canvas.cpp">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\m_Image.cpp">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\m_Quad.cpp">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\modules\m_Sound.cpp">
+      <Filter>src\modules</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
