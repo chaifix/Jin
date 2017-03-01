@@ -82,12 +82,15 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\;C:\Users\chai\Documents\VC_Libs\SDL2-2.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\;$(SolutionDir)libs\SDL2-2.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
       <AdditionalDependencies>opengl32.lib;glu32.lib;SDL2main.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\chai\Documents\VC_Libs\SDL2-2.0.5\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)libs\SDL2-2.0.5\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -105,14 +108,17 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\;$(SolutionDir)..\..\deps\SDL2-2.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\..\src\;$(SolutionDir)libs\SDL2-2.0.5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>opengl32.lib;glu32.lib;SDL2main.lib;SDL2.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)..\..\deps\SDL2-2.0.5\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>$(SolutionDir)libs\SDL2-2.0.5\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -129,6 +135,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\src\audio\audio.cpp" />
+    <ClCompile Include="..\..\src\core\game.cpp" />
     <ClCompile Include="..\..\src\input\event.cpp" />
     <ClCompile Include="..\..\src\input\keyboard.cpp" />
     <ClCompile Include="..\..\src\input\mouse.cpp" />
@@ -166,28 +174,34 @@
     <ClCompile Include="..\..\src\libs\lua51\print.c" />
     <ClCompile Include="..\..\src\libs\stb\stb_vorbis.c" />
     <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\modules\m_core.cpp" />
+    <ClCompile Include="..\..\src\modules\m_Font.cpp" />
+    <ClCompile Include="..\..\src\modules\m_jin.cpp" />
     <ClCompile Include="..\..\src\modules\m_audio.cpp" />
     <ClCompile Include="..\..\src\modules\m_event.cpp" />
-    <ClCompile Include="..\..\src\modules\m_font.cpp" />
     <ClCompile Include="..\..\src\modules\m_graphics.cpp" />
+    <ClCompile Include="..\..\src\modules\m_JSL.cpp" />
     <ClCompile Include="..\..\src\modules\m_keyboard.cpp" />
     <ClCompile Include="..\..\src\modules\m_mouse.cpp" />
     <ClCompile Include="..\..\src\modules\m_net.cpp" />
     <ClCompile Include="..\..\src\modules\m_time.cpp" />
     <ClCompile Include="..\..\src\modules\m_Canvas.cpp" />
     <ClCompile Include="..\..\src\modules\m_Image.cpp" />
-    <ClCompile Include="..\..\src\modules\m_Quad.cpp" />
     <ClCompile Include="..\..\src\modules\m_Sound.cpp" />
     <ClCompile Include="..\..\src\render\canvas.cpp" />
     <ClCompile Include="..\..\src\render\color.cpp" />
+    <ClCompile Include="..\..\src\render\drawable.cpp" />
     <ClCompile Include="..\..\src\render\font.cpp" />
     <ClCompile Include="..\..\src\render\graphics.cpp" />
     <ClCompile Include="..\..\src\render\image.cpp" />
     <ClCompile Include="..\..\src\render\jsl.cpp" />
-    <ClCompile Include="..\..\src\render\quad.cpp" />
+    <ClCompile Include="..\..\src\render\window.cpp" />
+    <ClCompile Include="..\..\src\utils\matrix.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\src\core\fs.h" />
+    <ClInclude Include="..\..\src\audio\audio.h" />
+    <ClInclude Include="..\..\src\core\game.h" />
+    <ClInclude Include="..\..\src\fs\fs.h" />
     <ClInclude Include="..\..\src\input\event.h" />
     <ClInclude Include="..\..\src\input\keyboard.h" />
     <ClInclude Include="..\..\src\input\mouse.h" />
@@ -212,13 +226,20 @@
     <ClInclude Include="..\..\src\libs\lua51\lua.h" />
     <ClInclude Include="..\..\src\libs\lua51\luaconf.h" />
     <ClInclude Include="..\..\src\libs\lua51\lualib.h" />
+    <ClInclude Include="..\..\src\libs\lua51\luax.h" />
     <ClInclude Include="..\..\src\libs\lua51\lundump.h" />
     <ClInclude Include="..\..\src\libs\lua51\lvm.h" />
     <ClInclude Include="..\..\src\libs\lua51\lzio.h" />
+    <ClInclude Include="..\..\src\libs\luax\luax.h" />
     <ClInclude Include="..\..\src\libs\stb\stb_image.h" />
+    <ClInclude Include="..\..\src\libs\stb\stb_truetype.h" />
     <ClInclude Include="..\..\src\lua\boot.lua.h" />
     <ClInclude Include="..\..\src\lua\debug.lua.h" />
+    <ClInclude Include="..\..\src\lua\graphics.lua.h" />
     <ClInclude Include="..\..\src\lua\init.lua.h" />
+    <ClInclude Include="..\..\src\lua\keyboard.lua.h" />
+    <ClInclude Include="..\..\src\modules\m_jin.h" />
+    <ClInclude Include="..\..\src\modules\m_types.h" />
     <ClInclude Include="..\..\src\render\canvas.h" />
     <ClInclude Include="..\..\src\render\color.h" />
     <ClInclude Include="..\..\src\render\drawable.h" />
@@ -226,9 +247,11 @@
     <ClInclude Include="..\..\src\render\graphics.h" />
     <ClInclude Include="..\..\src\render\image.h" />
     <ClInclude Include="..\..\src\render\jsl.h" />
-    <ClInclude Include="..\..\src\render\quad.h" />
-    <ClInclude Include="..\..\src\utils\timer.h" />
-    <ClInclude Include="..\..\src\utils\vec2.h" />
+    <ClInclude Include="..\..\src\render\window.h" />
+    <ClInclude Include="..\..\src\utils\endian.h" />
+    <ClInclude Include="..\..\src\utils\error.h" />
+    <ClInclude Include="..\..\src\utils\matrix.h" />
+    <ClInclude Include="..\..\src\utils\utils.h" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="..\..\src\res\font.ttf" />
@@ -242,6 +265,9 @@
     <None Include="..\..\src\lua\debug.lua" />
     <None Include="..\..\src\lua\init.lua" />
     <None Include="..\..\src\lua\patern.cwrap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\src\lua\graphics.lua" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

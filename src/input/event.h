@@ -2,12 +2,10 @@
 #define __JIN_EVENT_H
 namespace jin
 {
-	class Event
-	{
-	public: 
-		// called every frame 
-		void poll();
-	};
+namespace input
+{ 
+    
+}
 }
 
 #endif

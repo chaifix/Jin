@@ -1,8 +1,27 @@
-/**
-* Copyright (c) 2017 chai(neonum)
-*
-* This is a free software. You can redistribute it and/or modify it under the terms of
-* the GPL license. See LICENSE for details.
-*
-* Contact: shu_chai@163.com
-*/
+#include "libs/luax/luax.h"
+#include "SDL2/SDL.h"
+namespace jin
+{
+namespace module
+{
+    static int l_pos(lua_State* L)
+    {
+        int x, y; 
+        SDL_GetMouseState(&x, &y);
+        luax_pushnumber(L, x); 
+        luax_pushnumber(L, y);
+        return 2; 
+    }
+
+    static const luaL_Reg f[] = {
+        {"position", l_pos},
+        {0, 0}
+    };
+    
+    int luaopen_mouse(lua_State* L)
+    {
+        luax_newlib(L, f);
+        return 1;
+    }
+}
+}

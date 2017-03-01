@@ -2,9 +2,12 @@
 #define __JIN_KEYBOARD_H
 namespace jin
 {
-	class Keyboard
-	{
+namespace input
+{
+    class Keyboard
+    {
 
-	};
+    };
+}
 }
 #endif

@@ -6,3 +6,6 @@
 /deps/* 
 !/deps/DEPS
 /bin/* 
+
+*.o
+*.obj

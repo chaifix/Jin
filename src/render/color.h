@@ -3,11 +3,11 @@
 
 namespace jin 
 {
-class Color
+namespace render
 {
-public: 
-    int r, g ,b, a;
-};
+    typedef uint32_t color; 
+    
+}
 }// jin 
 
 #endif

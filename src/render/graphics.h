@@ -6,7 +6,20 @@
 #include "image.h"
 namespace jin 
 {
-void drawColor(const Color& col);   // set draw color 
-
-}// jin
+namespace render
+{
+	enum RENDER_MODE{
+		FILL = 1, 
+		LINE
+	};
+	/**
+	* TODO: 
+	*     drawline(int x, int y, int x2, int y2, int border)
+	*     drawRect(int x, int y, int w, int h, RENDER_MODE mode) 
+	*	  drawCircle(int x, int y, float radius)
+	*     drawPixel(int x, int y) 
+	*/
+	
+}
+}
 #endif

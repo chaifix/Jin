@@ -1,8 +1,14 @@
-/**
-* Copyright (c) 2017 chai(neonum)
-*
-* This is a free software. You can redistribute it and/or modify it under the terms of
-* the GPL license. See LICENSE for details.
-*
-* Contact: shu_chai@163.com
-*/
+#include "libs/luax/luax.h"
+#include "lua/keyboard.lua.h"
+
+namespace jin
+{
+namespace module
+{
+    int luaopen_keyboard(lua_State* L)
+    {
+        luax_newlib(L, 0); 
+        return 1;
+    }
+}
+}

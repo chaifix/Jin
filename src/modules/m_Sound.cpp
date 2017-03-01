@@ -1,10 +1,25 @@
-/**
-* Copyright (c) 2017 chai(neonum)
-*
-* This is a free software. You can redistribute it and/or modify it under the terms of
-* the GPL license. See LICENSE for details.
-*
-* Contact: shu_chai@163.com
-*/
+#include "libs/luax/luax.h"
 
+namespace jin
+{
+namespace module
+{
 
+    static int l_play(lua_State* L)
+    {
+
+        return 0; 
+    }
+
+    static const luaL_Reg f[] = {
+        {"play", l_play},
+        {0, 0}
+    };
+
+	int luaopen_Sound(lua_State* L)
+	{
+
+		return 1; 
+	}
+}
+}

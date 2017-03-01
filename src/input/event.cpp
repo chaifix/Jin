@@ -3,12 +3,5 @@
 
 namespace jin
 {
-	void Event::poll()
-	{
-		SDL_Event* e; 
-		while (SDL_PollEvent(e))
-		{
-			
-		}
-	}
+
 }

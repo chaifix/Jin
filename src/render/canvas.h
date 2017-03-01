@@ -1,21 +1,33 @@
 #ifndef __JIN_CANVAS_H
 #define __JIN_CANVAS_H
 #include "drawable.h"
-#include "rect.h"
 namespace jin
 {
-class Canvas: public _Drawable
-{
-public: 
-    void bind(); 
-    void unbind(); 
-    void draw(int x = 0, int y = 0, int scale = 1);
-    void draw(const Rect& src, const Rect& dst);
-private:
-    //GLuint fbo; 
-    //GLuint img; 
-    //static GLuint preCanvas;    // previous canvas to render 
-};
+namespace render 
+{ 
+    class Canvas: public Drawable
+    {
+    public: 
+
+        Canvas(); 
+		~Canvas();
+        
+        bool init(int w, int h); 
+        
+        void bind(); 
+        
+		static void unbind();
+
+        static bool hasbind(GLint fbo); 
+
+    private:
+
+        GLuint fbo; 
+
+		// current binded fbo 
+		static GLint cur; 
+	};
+}
 }// jin
 
 #endif
