@@ -12,8 +12,8 @@ namespace render
     Drawable::~Drawable()
     {
         glDeleteTextures(1, &texture);
-		delete[] vertCoord; 
-		delete[] textCoord;
+        delete[] vertCoord; 
+        delete[] textCoord;
     }
 
     void Drawable::init(int w, int h)
@@ -29,15 +29,15 @@ namespace render
 
     void Drawable::setVertices(float* v, float* t)
     {
-		// render area 
-		if (vertCoord)
-			delete[] vertCoord;
-		vertCoord = v;
+        // render area 
+        if (vertCoord)
+            delete[] vertCoord;
+        vertCoord = v;
 
-		// textrue 
+        // textrue 
         if (textCoord) 
-			delete[] textCoord; 
-		textCoord = t;
+            delete[] textCoord; 
+        textCoord = t;
     }
 
     void Drawable::setAnchor(int x, int y)
@@ -58,7 +58,9 @@ namespace render
 
     void Drawable::draw(int x, int y, float sx, float sy, float r)
     {
+        // Must set textCoord and vertCoord before renderring 
         if (! textCoord||! vertCoord) return;
+
         static jin::util::Matrix t;
         t.setTransformation(x, y, r, sx, sy, ancx, ancy);
 
@@ -66,22 +68,22 @@ namespace render
 
         glBindTexture(GL_TEXTURE_2D, texture);
         
-		// push modle matrix 
+        // push modle matrix 
         glPushMatrix();
         glMultMatrixf((const GLfloat*)t.getElements());
 
         glEnableClientState(GL_VERTEX_ARRAY);
         glEnableClientState(GL_TEXTURE_COORD_ARRAY);
-		glTexCoordPointer(2, GL_FLOAT, 0, textCoord);
+        glTexCoordPointer(2, GL_FLOAT, 0, textCoord);
         glVertexPointer(2, GL_FLOAT, 0, vertCoord);
         glDrawArrays(GL_QUADS, 0, 4);
         glDisableClientState(GL_TEXTURE_COORD_ARRAY);
         glDisableClientState(GL_VERTEX_ARRAY);
 
-		// pop the model matrix 
+        // pop the model matrix
         glPopMatrix();
 
-		// bind texture to default screen 
+        // bind texture to default screen 
         glBindTexture(GL_TEXTURE_2D, 0);
 
         glDisable(GL_TEXTURE_2D);

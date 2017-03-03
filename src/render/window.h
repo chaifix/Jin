@@ -10,8 +10,11 @@ namespace render
     public: 
         
         void init(int w, int h, const char* t);
+        
         SDL_Window* getWnd();
+        
         SDL_GLContext getCtx(); 
+        
         static Window* get(); 
 
         int getW(); 
@@ -23,9 +26,13 @@ namespace render
 
         Window(); 
         ~Window(); 
+        
         static Window* g_wnd; 
+        
         SDL_Window* wnd; 
+        
         SDL_GLContext ctx;
+        
         int w, h;
     };
 }

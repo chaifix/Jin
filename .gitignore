@@ -6,6 +6,9 @@
 /deps/* 
 !/deps/DEPS
 /bin/* 
+!/bin/LICENSE
+
+*.py
 
 *.o
 *.obj

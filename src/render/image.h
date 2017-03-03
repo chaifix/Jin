@@ -13,20 +13,20 @@ namespace render
         Image();
         ~Image();
 
-        /* just like Image() */
+        // just like Image()
         void init(); 
         
-		/* load from file */
+        // load from file
         bool loadf(const char* f); 
         
-		/* load from buffer */
-        bool loadb(const char* b); 
+        // load from memory 
+        bool loadb(const char* b, int size); 
         
-		color getPixel(int x, int y);
+        color getPixel(int x, int y);
+        
+    private:
     
-	private:
-    
-		color* pixels;
+        color* pixels;
     };
 }
 }

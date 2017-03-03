@@ -10,13 +10,13 @@ namespace render
     public: 
 
         Canvas(); 
-		~Canvas();
+        ~Canvas();
         
         bool init(int w, int h); 
         
         void bind(); 
         
-		static void unbind();
+        static void unbind();
 
         static bool hasbind(GLint fbo); 
 
@@ -24,9 +24,9 @@ namespace render
 
         GLuint fbo; 
 
-		// current binded fbo 
-		static GLint cur; 
-	};
+        // current binded fbo 
+        static GLint cur; 
+    };
 }
 }// jin
 

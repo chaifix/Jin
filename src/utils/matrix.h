@@ -1,5 +1,5 @@
-#ifndef LOVE_MATRIX_H
-#define LOVE_MATRIX_H
+#ifndef __JIN_MATRIX_H
+#define __JIN_MATRIX_H
 #include <math.h>
 namespace jin
 {

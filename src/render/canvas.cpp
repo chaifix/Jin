@@ -5,40 +5,40 @@ namespace jin
 {
 namespace render 
 {
-	Canvas::Canvas() :Drawable()
-	{
-	}
+    Canvas::Canvas() :Drawable()
+    {
+    }
 
-	Canvas::~Canvas()
-	{
-		Drawable::~Drawable();
-	}
+    Canvas::~Canvas()
+    {
+        Drawable::~Drawable();
+    }
 
-	// no canvas has binded 
-	GLint Canvas::cur = -1; 
+    // no canvas has binded 
+    GLint Canvas::cur = -1; 
 
     bool Canvas::init(int w, int h)
     {
         Drawable::init(w, h);
         Drawable::setVertices(
-			new float [DRAWABLE_V_SIZE] {
-				0, 0,
-				0, (float)h,
-				(float)w, (float)h,
-				(float)w, 0,
-			},
-			new float [DRAWABLE_V_SIZE] {
-				0, 1,
-				0, 0,
-				1, 0,
-				1, 1
-			}
-		);
+            new float [DRAWABLE_V_SIZE] {
+                0, 0,
+                0, (float)h,
+                (float)w, (float)h,
+                (float)w, 0,
+            },
+            new float [DRAWABLE_V_SIZE] {
+                0, 1,
+                0, 0,
+                1, 0,
+                1, 1
+            }
+        );
 
         GLint current_fbo;
         glGetIntegerv(GL_DRAW_FRAMEBUFFER_BINDING, &current_fbo);
 
-		// generate a new render buffer object 
+        // generate a new render buffer object 
         glGenFramebuffers(1, &fbo);
         glBindFramebuffer(GL_FRAMEBUFFER, fbo);
 
@@ -53,27 +53,27 @@ namespace render
 
         GLenum status = glCheckFramebufferStatus(GL_FRAMEBUFFER);
         
-		// unbind framebuffer
+        // unbind framebuffer
         glBindFramebuffer(GL_FRAMEBUFFER, current_fbo);
         
-		if (status != GL_FRAMEBUFFER_COMPLETE_EXT)
+        if (status != GL_FRAMEBUFFER_COMPLETE_EXT)
             return false;
         return true; 
     }
 
     bool Canvas::hasbind(GLint fbo)
     {
-		return cur == fbo; 
+        return cur == fbo; 
     }
 
-	/**
-	* bind to canvas 
-	*/
+    /**
+    * bind to canvas 
+    */
     void Canvas::bind()
     {
         if (hasbind(fbo)) return;
 
-		cur = fbo;
+        cur = fbo;
 
         glBindFramebuffer(GL_FRAMEBUFFER, fbo);
 
@@ -82,12 +82,12 @@ namespace render
         glLoadIdentity();
 
         glViewport(0, 0, width, height);
-		glOrtho(0, width, height, 0, -1, 1);
+        glOrtho(0, width, height, 0, -1, 1);
 
-		// Switch back to modelview matrix
+        // Switch back to modelview matrix
         glMatrixMode(GL_MODELVIEW);
-		glPushMatrix();
-		glLoadIdentity();
+        glPushMatrix();
+        glLoadIdentity();
     }
 
     /**
@@ -96,28 +96,28 @@ namespace render
     /*static*/ void Canvas::unbind()
     {
         if (hasbind(0)) return;
-		
-		cur = 0;
+        
+        cur = 0;
 
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
-		// load back to normal 
+        // load back to normal 
         glMatrixMode(GL_PROJECTION);
-		glPushMatrix();
-		glLoadIdentity();
+        glPushMatrix();
+        glLoadIdentity();
         
         Window* wnd = Window::get(); 
         int ww = wnd->getW(),
             wh = wnd->getH();
 
-		// set viewport matrix 
+        // set viewport matrix 
         glViewport(0, 0, ww, wh);
         glOrtho(0, ww, wh, 0, -1, 1);
 
-		//  switch to model matrix  
+        //  switch to model matrix  
         glMatrixMode(GL_MODELVIEW);
-		glPushMatrix();
-		glLoadIdentity();
+        glPushMatrix();
+        glLoadIdentity();
     }
 }
 }

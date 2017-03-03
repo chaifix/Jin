@@ -1,0 +1,7 @@
+usage 
+
+    jin <game directory> [-d]
+
+for example 
+
+    jin test -d 

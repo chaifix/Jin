@@ -9,33 +9,33 @@ namespace render
     {
     public:
        
-		Drawable();
+        Drawable();
         ~Drawable();
         
-		/* pseudo constructor*/
+        /* pseudo constructor*/
         void init(int w = 0, int h = 0);
         
-		/* set anchor of texture, (0, 0) by default */ 
+        /* set anchor of texture, (0, 0) by default */ 
         void setAnchor(int x, int y); 
         
-		void draw(int x, int y, float sx, float sy, float r);
+        void draw(int x, int y, float sx, float sy, float r);
         
-		int getWidth();
+        int getWidth();
         int getHeight();
     
-	protected:
+    protected:
 #define DRAWABLE_V_SIZE 8
-		void setVertices(float* v, float* t);
+        void setVertices(float* v, float* t);
         
-		GLuint texture; 
+        GLuint texture; 
         
-		int width, height;
+        int width, height;
         
-		/* anchor point */ 
+        /* anchor point */ 
         int ancx, ancy;
         
-		// render coords
-		float* textCoord;
+        // render coords
+        float* textCoord;
         float* vertCoord;
     };
 }

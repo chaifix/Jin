@@ -37,48 +37,48 @@
 #define __glee_h_
 
 #ifdef __gl_h_
-	#error gl.h included before GLee.h
+    #error gl.h included before GLee.h
 #endif
 
 #ifdef __glext_h_
-	#error glext.h included before GLee.h
+    #error glext.h included before GLee.h
 #endif
 
 #ifdef __wglext_h_
-	#error wglext.h included before GLee.h
+    #error wglext.h included before GLee.h
 #endif
 
 #ifdef __glxext_h_
-	#error glxext.h included before GLee.h
+    #error glxext.h included before GLee.h
 #endif
 
 #ifdef _WIN32
-	#define WIN32_LEAN_AND_MEAN
-	#include <windows.h>
-	#include <GL/gl.h>
+    #define WIN32_LEAN_AND_MEAN
+    #include <windows.h>
+    #include <GL/gl.h>
 #elif defined(__APPLE__) || defined(__APPLE_CC__)
     #define GL_GLEXT_LEGACY
-	#include <OpenGL/gl.h>
+    #include <OpenGL/gl.h>
 #else // GLX
-	#define __glext_h_  /* prevent glext.h from being included  */
-	#define __glxext_h_ /* prevent glxext.h from being included */
-	#define GLX_GLXEXT_PROTOTYPES
-	#include <GL/gl.h>
-	#include <GL/glx.h>
+    #define __glext_h_  /* prevent glext.h from being included  */
+    #define __glxext_h_ /* prevent glxext.h from being included */
+    #define GLX_GLXEXT_PROTOTYPES
+    #include <GL/gl.h>
+    #include <GL/glx.h>
 #endif
 
 #ifndef APIENTRY
-	#define APIENTRY
+    #define APIENTRY
 #endif
 
 #ifndef APIENTRYP
-	#define APIENTRYP APIENTRY *
+    #define APIENTRYP APIENTRY *
 #endif
 
 #define GLEE_EXTERN extern
 
 #ifdef __cplusplus 
-	extern "C" {		/* begin C linkage */
+    extern "C" {        /* begin C linkage */
 #endif
 
 #define GLEE_LINK_FAIL 0
@@ -963,17 +963,17 @@ GLEE_EXTERN GLboolean _GLEE_IBM_static_data;
 
 /* Used for GLSL shader text */
 #ifndef GL_VERSION_2_0
-	typedef char GLchar; 
+    typedef char GLchar; 
 #endif
 
 #ifdef _MSC_VER
   #if _MSC_VER >= 1600
     #include <stdint.h>
   #else
-	typedef __int32 int32_t;
-	typedef unsigned __int32 uint32_t;
-	typedef __int64 int64_t;
-	typedef unsigned __int64 uint64_t;
+    typedef __int32 int32_t;
+    typedef unsigned __int32 uint32_t;
+    typedef __int64 int64_t;
+    typedef unsigned __int64 uint64_t;
   #endif
 #else
   #include <stdint.h>
@@ -981,49 +981,49 @@ GLEE_EXTERN GLboolean _GLEE_IBM_static_data;
 #endif
 
 #ifndef GL_VERSION_1_5
-	typedef ptrdiff_t GLintptr;
-	typedef ptrdiff_t GLsizeiptr;
+    typedef ptrdiff_t GLintptr;
+    typedef ptrdiff_t GLsizeiptr;
 #endif
 
 #ifndef GL_NV_half_float
-	typedef unsigned short GLhalfNV;
+    typedef unsigned short GLhalfNV;
 #endif
 
 #ifndef GL_ARB_vertex_buffer_object
-	typedef ptrdiff_t GLintptrARB;
-	typedef ptrdiff_t GLsizeiptrARB;
+    typedef ptrdiff_t GLintptrARB;
+    typedef ptrdiff_t GLsizeiptrARB;
 #endif
 
 #ifndef GL_ARB_shader_objects
-	typedef int GLhandleARB;
-	typedef char GLcharARB;
+    typedef int GLhandleARB;
+    typedef char GLcharARB;
 #endif
 
 #ifndef GL_EXT_timer_query
-	typedef signed long long GLint64EXT;
-	typedef unsigned long long GLuint64EXT;
+    typedef signed long long GLint64EXT;
+    typedef unsigned long long GLuint64EXT;
 #endif
 
 #ifndef GL_ARB_sync
-	typedef int64_t GLint64;
-	typedef uint64_t GLuint64;
-	typedef struct __GLsync *GLsync;
+    typedef int64_t GLint64;
+    typedef uint64_t GLuint64;
+    typedef struct __GLsync *GLsync;
 #endif
 
 /* Platform-specific */
 
 #ifdef _WIN32    
 
-	/* WGL */
+    /* WGL */
 
-	#ifndef WGL_ARB_pbuffer
-	    DECLARE_HANDLE(HPBUFFERARB);
-	#endif
-	
-	#ifndef WGL_EXT_pbuffer
-	    DECLARE_HANDLE(HPBUFFEREXT);
-	#endif
-	
+    #ifndef WGL_ARB_pbuffer
+        DECLARE_HANDLE(HPBUFFERARB);
+    #endif
+    
+    #ifndef WGL_EXT_pbuffer
+        DECLARE_HANDLE(HPBUFFEREXT);
+    #endif
+    
     #ifndef WGL_NV_video_output
         DECLARE_HANDLE(HPVIDEODEV);
     #endif
@@ -1044,93 +1044,93 @@ GLEE_EXTERN GLboolean _GLEE_IBM_static_data;
             RECT   rcVirtualScreen;
         } GPU_DEVICE, *PGPU_DEVICE;
     #endif
-	
+    
 #elif defined(__APPLE__) || defined(__APPLE_CC__)
 
-	/* Mac OS X */
+    /* Mac OS X */
 
 #else          
 
-	/* GLX */
+    /* GLX */
 
-	typedef void (*__GLXextFuncPtr)(void);
+    typedef void (*__GLXextFuncPtr)(void);
 
-	#ifndef GLX_ARB_get_proc_address 
-	#define GLX_ARB_get_proc_address 1
-	    extern __GLXextFuncPtr glXGetProcAddressARB (const GLubyte *);
-	    extern void ( * glXGetProcAddressARB (const GLubyte *procName))(void);
-	    typedef __GLXextFuncPtr ( * PFNGLXGETPROCADDRESSARBPROC) (const GLubyte *procName);
-	#endif
+    #ifndef GLX_ARB_get_proc_address 
+    #define GLX_ARB_get_proc_address 1
+        extern __GLXextFuncPtr glXGetProcAddressARB (const GLubyte *);
+        extern void ( * glXGetProcAddressARB (const GLubyte *procName))(void);
+        typedef __GLXextFuncPtr ( * PFNGLXGETPROCADDRESSARBPROC) (const GLubyte *procName);
+    #endif
 
-	#ifndef GLX_SGIX_fbconfig
-	    typedef XID GLXFBConfigIDSGIX;
-	    typedef struct __GLXFBConfigRec *GLXFBConfigSGIX;
-	#endif
+    #ifndef GLX_SGIX_fbconfig
+        typedef XID GLXFBConfigIDSGIX;
+        typedef struct __GLXFBConfigRec *GLXFBConfigSGIX;
+    #endif
 
-	#ifndef GLX_SGIX_pbuffer
-	typedef XID GLXPbufferSGIX;
-	typedef struct {
-		int type;
-		unsigned long serial;
-		Bool send_event;
-		Display *display;
-		GLXDrawable drawable;
-		int event_type;		  
-		int draw_type;		  
-		unsigned int mask;	  
-		int x, y;
-		int width, height;
-		int count;
-	} GLXBufferClobberEventSGIX;
-	#endif
+    #ifndef GLX_SGIX_pbuffer
+    typedef XID GLXPbufferSGIX;
+    typedef struct {
+        int type;
+        unsigned long serial;
+        Bool send_event;
+        Display *display;
+        GLXDrawable drawable;
+        int event_type;          
+        int draw_type;          
+        unsigned int mask;      
+        int x, y;
+        int width, height;
+        int count;
+    } GLXBufferClobberEventSGIX;
+    #endif
 
-	#ifndef GLX_SGIX_hyperpipe
-		#define _GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX 80
-		typedef struct 
-		{
-			char  pipeName[_GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX];
-			int  networkId;
-		} GLXHyperpipeNetworkSGIX;
+    #ifndef GLX_SGIX_hyperpipe
+        #define _GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX 80
+        typedef struct 
+        {
+            char  pipeName[_GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX];
+            int  networkId;
+        } GLXHyperpipeNetworkSGIX;
 
-		typedef struct 
-		{
-			char pipeName[_GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX];
-			int channel;
-			unsigned int participationType;
-			int timeSlice;
-		} GLXHyperpipeConfigSGIX;
+        typedef struct 
+        {
+            char pipeName[_GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX];
+            int channel;
+            unsigned int participationType;
+            int timeSlice;
+        } GLXHyperpipeConfigSGIX;
 
-		typedef struct 
-		{
-			char pipeName[_GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX];
-			int srcXOrigin;
-			int srcYOrigin;
-			int srcWidth;
-			int srcHeight;
-			int destXOrigin;
-			int destYOrigin;
-			int destWidth;
-			int destHeight;
-		} GLXPipeRect;
+        typedef struct 
+        {
+            char pipeName[_GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX];
+            int srcXOrigin;
+            int srcYOrigin;
+            int srcWidth;
+            int srcHeight;
+            int destXOrigin;
+            int destYOrigin;
+            int destWidth;
+            int destHeight;
+        } GLXPipeRect;
 
-		typedef struct 
-		{
-			char pipeName[_GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX];
-			int XOrigin; 
-			int YOrigin;
-			int maxHeight;
-			int maxWidth;
-		} GLXPipeRectLimits;
-	#endif 
-	
-	#ifndef GLX_NV_video_output
+        typedef struct 
+        {
+            char pipeName[_GLX_HYPERPIPE_PIPE_NAME_LENGTH_SGIX];
+            int XOrigin; 
+            int YOrigin;
+            int maxHeight;
+            int maxWidth;
+        } GLXPipeRectLimits;
+    #endif 
+    
+    #ifndef GLX_NV_video_output
     typedef unsigned int GLXVideoDeviceNV;
     #endif // GLX_NV_video_output
 
     #ifndef GLX_NV_video_capture
     typedef XID GLXVideoCaptureDeviceNV;
     #endif // GLX_NV_video_output
-    	
+        
 #endif /* end platform specific */
 
 
@@ -22261,7 +22261,7 @@ GLEE_EXTERN const char * GLeeGetExtStrGLX( void );
 #endif
 
 #ifdef __cplusplus
-}	/* end C linkage */
+}    /* end C linkage */
 #endif
 
 #endif /* __glee_h_ defined */

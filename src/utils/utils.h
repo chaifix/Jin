@@ -8,6 +8,4 @@
 #define within(a,min,max)        (a >= min && a <= max)
 #define without(a,min,max)        (a < min || a > max)
 
-#define normal(a)                (a > 0 ? 1 : -1)
-
 #endif
