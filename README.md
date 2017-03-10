@@ -1,44 +1,22 @@
-Jin is a 2d game framework in C++ for simplifying game making 
-process. 
+# Jin 
+[中文](README_zh.md)   
+A game framework for making 2D games in lua. 
 
-Screenshot
---------
-http://hua128.org/jin/img/img_1.png
-http://hua128.org/jin/img/img_2.png
-http://hua128.org/jin/img/img_3.png
-http://hua128.org/jin/img/img_4.png
-http://hua128.org/jin/img/img_5.png
+## Screenshot   
+![doc/screenshot/a.png](doc/screenshot/a.png)   
+![doc/screenshot/b.png](doc/screenshot/b.png)   
+![doc/screenshot/c.png](doc/screenshot/c.gif)   
 
-Moduals
---------
-Graphics 
-2D physics 
-Audio 
-Networking
+## Modules   
+* Graphics 
+* Filesystem 
+* Keyboard 
+* Mouse 
+* Timer 
+* Audio[WIP]
+* Network[WIP]
 
-Purposes
---------
-* Blitting and pixel buffers, wrapped around the windows API
-* 16bit audio callback, wrapped around the windows API
-* A very basic collision system (which I may or may not use)
-
-Build
---------
-Requirements: 
-    SDL2
-Linux: 
-    
-Windows: 
-
-MacOS: 
-    
-TODO 
---------
-
-About
---------
-Programming: chai(shu_chai@163.com)
-Art:         chai(shu_chai@163.com)
-
+## License
+See [LICENSE](LICENSE) for details.
 
 
