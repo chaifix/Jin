@@ -1,5 +1,5 @@
 # Jin 
-[中文](README_zh.md)   
+[中文版](README_zh.md)   
 A game framework for making 2D games in lua. 
 
 ## Screenshot   
@@ -9,7 +9,7 @@ A game framework for making 2D games in lua.
 
 ## Getting started    
 You can download Jin from the [releases page](https://github.com/neonum/jin/releases). To 
-run the game, you need set the first arguments as your game directory. For example, your 
+run the game, you need set the first argument as your game directory. For example, if your 
 game is in a directory called `mygame`, you would run the following command:    
 
 ```batch    
@@ -54,7 +54,7 @@ function jin.core.onDraw()
 end 
 ```
 
-See [doc/api.md](doc/api.md) for details.
+See [doc/api.md](doc/api.md) for reference.
     
 ## Modules   
 * Graphics 
