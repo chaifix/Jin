@@ -3,9 +3,9 @@
 一个用于制作lua 2d游戏的游戏框架。
 
 ## 截图   
-![doc/screenshot/a.png](doc/screenshot/a.png)   
-![doc/screenshot/b.png](doc/screenshot/b.png)   
-![doc/screenshot/c.png](doc/screenshot/c.gif)   
+![doc/screenshot/a.png](doc/screenshot/a.png) 
+![doc/screenshot/b.png](doc/screenshot/b.png) 
+![doc/screenshot/c.gif](doc/screenshot/c.gif) 
 
 ## 模块   
 * 图形 

@@ -3,9 +3,9 @@
 A game framework for making 2D games in lua. 
 
 ## Screenshot   
-![doc/screenshot/a.png](doc/screenshot/a.png)   
-![doc/screenshot/b.png](doc/screenshot/b.png)   
-![doc/screenshot/c.png](doc/screenshot/c.gif)   
+![doc/screenshot/a.png](doc/screenshot/a.png) 
+![doc/screenshot/b.png](doc/screenshot/b.png) 
+![doc/screenshot/c.gif](doc/screenshot/c.gif) 
 
 ## Modules   
 * Graphics 
