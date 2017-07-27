@@ -8,6 +8,7 @@
 * [jin.keyboard](#jinkeyboard)
 * [jin.mouse](#jinmouse)
 * [jin.filesystem](#jinfilesystem)
+* [jin.debug](#jindebug)
 
 ##### [Classes](#Classes-1)
 * [Image](#image)
@@ -31,6 +32,9 @@ Return jin version.
 
 
 ### jin.core
+
+#### jin.core.quit()
+Quit Jin. 
 
 #### jin.core.load() 
 A callback for loading resources. 
@@ -405,6 +409,15 @@ Return true if the given path is a directory.
 
 #### jin.filesystem.exist(path)
 Return true if the given path is existed.
+
+
+### jin.debug 
+
+#### jin.debug.print(str)
+Print to debug window.
+
+#### jin.debug.size(bsize)
+Set debug buffer size. 
 
 
 ## Classes

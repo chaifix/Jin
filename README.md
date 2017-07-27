@@ -7,7 +7,7 @@ A game framework for making 2D games in lua.
 ![doc/screenshot/b.png](doc/screenshot/b.png) 
 ![doc/screenshot/c.gif](doc/screenshot/c.gif) 
 
-## Getting started    
+## Guide    
 You can download Jin from the [releases page](https://github.com/neonum/jin/releases). To 
 run the game, you need set the first argument as your game directory. For example, if your 
 game is in a directory called `mygame`, you would run the following command:    

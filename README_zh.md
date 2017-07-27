@@ -7,7 +7,7 @@
 ![doc/screenshot/b.png](doc/screenshot/b.png) 
 ![doc/screenshot/c.gif](doc/screenshot/c.gif) 
 
-## 开始    
+## 指南    
 你可以在[发布页面](https://github.com/neonum/jin/releases)下载可执行文件。 为了运行
 游戏，你需要把第一个参数设为你的游戏目录。比如，你的游戏放在一个文件夹`mygame`之下，必须
 运行一下命令:     

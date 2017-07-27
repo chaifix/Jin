@@ -8,8 +8,7 @@ namespace render
 
     void point(int x, int y)
     {
-        float vers[] = { x , y };
-
+        float vers[] = { x + 0.5f , y + 0.5f };
         glEnableClientState(GL_VERTEX_ARRAY);
         glVertexPointer(2, GL_FLOAT, 0, (GLvoid*)vers);
         glDrawArrays(GL_POINTS, 0, 1);
