@@ -1,5 +1,5 @@
 #include "libs/luax/luax.h"
-#include "m_types.h"
+#include "../m_types.h"
 #include "render/canvas.h"
 using namespace jin::render;
 namespace jin

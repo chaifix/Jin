@@ -1,0 +1,5 @@
+Tekcos is a lightweight networking library supports basic TCP and 
+UDP. You can trop tekcos.h and tekcos.c into your projects. Tekcos 
+should works well on both windows, linux and macos. 
+
+Copyright (c) 2016~2017 chai(neonum) 

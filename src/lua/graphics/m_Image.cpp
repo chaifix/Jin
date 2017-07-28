@@ -1,6 +1,6 @@
 #include "libs/luax/luax.h"
 #include "render/image.h"
-#include "m_types.h"
+#include "../m_types.h"
 
 using namespace jin::render;
 

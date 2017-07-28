@@ -32,7 +32,7 @@ int main(int argc, char* argv[])
     for (int i = 0; i < argc; i++)
         luax_setraw_string(L, -2, i + 1, argv[i]);
     luax_setfield(L, -2, "_argv");
-
+    
     /**
     * jin._dir is the folder of jin binary executable
     */

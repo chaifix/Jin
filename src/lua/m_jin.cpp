@@ -60,7 +60,7 @@ namespace module
         {"time",        luaopen_time},
         {"mouse",       luaopen_mouse},
         {"keyboard",    luaopen_keyboard},
-        { "filesystem", luaopen_filesystem },
+        {"filesystem", luaopen_filesystem},
         /*
         {"net",        luaopen_net},
         {"audio",      luaopen_audio}

@@ -49,14 +49,44 @@
     <Filter Include="src\lua\embed">
       <UniqueIdentifier>{cb6d9d4e-046b-44c7-b00a-c316e87e035c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\lua\embed\script">
-      <UniqueIdentifier>{cfae6e72-e20a-4555-84d0-4b923967f958}</UniqueIdentifier>
-    </Filter>
     <Filter Include="src\libs\tiny">
       <UniqueIdentifier>{707999eb-c764-404f-9fc8-a43f470b096f}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\libs\smount">
       <UniqueIdentifier>{dd79db1e-9bec-4f8e-8d37-0d82c74a534b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lua\core">
+      <UniqueIdentifier>{b13ee8dc-41fc-42b3-8b64-f9c261ebfc73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lua\graphics">
+      <UniqueIdentifier>{1ed523c3-e203-487f-a13f-a35396f814f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lua\audio">
+      <UniqueIdentifier>{4eb54d6d-e336-42f6-8670-d271a458eb56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lua\event">
+      <UniqueIdentifier>{8a740640-925a-4cf6-94d5-89283824a141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lua\keyboard">
+      <UniqueIdentifier>{2a701538-aeee-4f48-a285-0b848c9a3b81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lua\mouse">
+      <UniqueIdentifier>{5b69329e-0aa2-4c77-be52-69c09fdbac65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lua\debug">
+      <UniqueIdentifier>{0280790b-7c7a-406d-8606-b39c944fefaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lua\filesystem">
+      <UniqueIdentifier>{563ed6fb-3d82-4905-b128-835f3818cc4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lua\net">
+      <UniqueIdentifier>{6b79b5bf-69c1-458c-81f3-b386b340d39b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lua\time">
+      <UniqueIdentifier>{ee920041-8798-4827-be04-49f9342ba092}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\tekcos">
+      <UniqueIdentifier>{065bf16a-223d-4aae-ab0b-c7b5af5e3596}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -198,54 +228,6 @@
     <ClCompile Include="..\..\src\utils\matrix.cpp">
       <Filter>src\utils</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_audio.cpp">
-      <Filter>src\lua</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_core.cpp">
-      <Filter>src\lua</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_event.cpp">
-      <Filter>src\lua</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_graphics.cpp">
-      <Filter>src\lua</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_jin.cpp">
-      <Filter>src\lua</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_keyboard.cpp">
-      <Filter>src\lua</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_mouse.cpp">
-      <Filter>src\lua</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_net.cpp">
-      <Filter>src\lua</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_time.cpp">
-      <Filter>src\lua</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_Sound.cpp">
-      <Filter>src\lua</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_JSL.cpp">
-      <Filter>src\lua</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_Image.cpp">
-      <Filter>src\lua</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_Font.cpp">
-      <Filter>src\lua</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_Canvas.cpp">
-      <Filter>src\lua</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_filesystem.cpp">
-      <Filter>src\lua</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\lua\m_debug.cpp">
-      <Filter>src\lua</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\fs\filesystem.cpp">
       <Filter>src\fs</Filter>
     </ClCompile>
@@ -254,6 +236,57 @@
     </ClCompile>
     <ClCompile Include="..\..\src\audio\audio.cpp">
       <Filter>src\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\m_jin.cpp">
+      <Filter>src\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\audio\m_audio.cpp">
+      <Filter>src\lua\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\audio\m_Sound.cpp">
+      <Filter>src\lua\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\core\m_core.cpp">
+      <Filter>src\lua\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\debug\m_debug.cpp">
+      <Filter>src\lua\debug</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\event\m_event.cpp">
+      <Filter>src\lua\event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\filesystem\m_filesystem.cpp">
+      <Filter>src\lua\filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\graphics\m_Canvas.cpp">
+      <Filter>src\lua\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\graphics\m_Font.cpp">
+      <Filter>src\lua\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\graphics\m_graphics.cpp">
+      <Filter>src\lua\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\graphics\m_Image.cpp">
+      <Filter>src\lua\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\graphics\m_JSL.cpp">
+      <Filter>src\lua\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\keyboard\m_keyboard.cpp">
+      <Filter>src\lua\keyboard</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\mouse\m_mouse.cpp">
+      <Filter>src\lua\mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\net\m_net.cpp">
+      <Filter>src\lua\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\lua\time\m_time.cpp">
+      <Filter>src\lua\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\libs\tekcos\tekcos.c">
+      <Filter>src\libs\tekcos</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -446,6 +479,12 @@
     <ClInclude Include="..\..\src\audio\audio.h">
       <Filter>src\audio</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\net\net.h">
+      <Filter>src\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\libs\tekcos\tekcos.h">
+      <Filter>src\libs\tekcos</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Font Include="..\..\src\res\font.ttf">
@@ -462,19 +501,19 @@
       <Filter>src\libs\lua51</Filter>
     </None>
     <None Include="..\..\src\lua\embed\boot.lua">
-      <Filter>src\lua\embed\script</Filter>
+      <Filter>src\lua\embed</Filter>
     </None>
     <None Include="..\..\src\lua\embed\debug.lua">
-      <Filter>src\lua\embed\script</Filter>
+      <Filter>src\lua\embed</Filter>
     </None>
     <None Include="..\..\src\lua\embed\graphics.lua">
-      <Filter>src\lua\embed\script</Filter>
+      <Filter>src\lua\embed</Filter>
     </None>
     <None Include="..\..\src\lua\embed\keyboard.lua">
-      <Filter>src\lua\embed\script</Filter>
+      <Filter>src\lua\embed</Filter>
     </None>
     <None Include="..\..\src\lua\embed\mouse.lua">
-      <Filter>src\lua\embed\script</Filter>
+      <Filter>src\lua\embed</Filter>
     </None>
   </ItemGroup>
 </Project>

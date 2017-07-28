@@ -5,7 +5,7 @@
 #include "render/graphics.h"
 #include "render/window.h"
 #include "render/font.h"
-#include "m_types.h"
+#include "../m_types.h"
 #include "lua/embed/graphics.lua.h"
 #include "libs/GLee/GLee.h"
 #include "fs/filesystem.h"
@@ -84,7 +84,7 @@ namespace module
     static int l_newImage(lua_State* L)
     {
         Image* img = (Image*)luax_newinstance(L, TYPE_IMAGE, sizeof(Image));
-        /* pseudo constructor */
+        // pseudo constructor
         img->init();
         Filesystem* fs = Filesystem::get(); 
         const char* f = luax_checkstring(L, 1);

@@ -23,8 +23,6 @@ jin._argv[2] = jin._argv[2] or '.'
 jin.filesystem.init()
 jin.filesystem.mount(jin._argv[2])
 
-package.path = package.path .. ';?/init.lua'
-
 -- config
 local conf = {} 
 if jin.filesystem.exist("config.lua") then 
