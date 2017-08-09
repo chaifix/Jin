@@ -11,7 +11,6 @@ namespace render
 
     Canvas::~Canvas()
     {
-        Drawable::~Drawable();
     }
 
     // no canvas has binded 
@@ -100,18 +99,18 @@ namespace render
         cur = 0;
 
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
+        Window* wnd = Window::get();
+        int ww = wnd->getW(),
+            wh = wnd->getH();
+
+        glViewport(0, 0, ww, wh);
 
         // load back to normal 
         glMatrixMode(GL_PROJECTION);
         glPushMatrix();
         glLoadIdentity();
         
-        Window* wnd = Window::get(); 
-        int ww = wnd->getW(),
-            wh = wnd->getH();
-
         // set viewport matrix 
-        glViewport(0, 0, ww, wh);
         glOrtho(0, ww, wh, 0, -1, 1);
 
         //  switch to model matrix  

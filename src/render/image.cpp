@@ -12,7 +12,6 @@ namespace render
 
     Image::~Image()
     {
-        Drawable::~Drawable();
         stbi_image_free(pixels);
     }
 

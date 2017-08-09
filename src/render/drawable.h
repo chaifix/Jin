@@ -10,7 +10,7 @@ namespace render
     public:
        
         Drawable();
-        ~Drawable();
+        virtual ~Drawable();
         
         /* pseudo constructor*/
         void init(int w = 0, int h = 0);
@@ -37,6 +37,7 @@ namespace render
         // render coords
         float* textCoord;
         float* vertCoord;
+
     };
 }
 }// jin

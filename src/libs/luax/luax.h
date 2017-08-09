@@ -97,6 +97,12 @@
 #define luax_setfield_cfunc(L, k, v)  luax_setfield_(cfunction, L, k, v)
 #define luax_setfield_fstring(L, k, ...)\
    do { lua_pushfstring(L, __VA_ARGS__); lua_setfield(L, -2, k); } while (0)
+
+/**
+* If nosuch field push a nil at the top of stack.
+*/
+#define luax_getfield(L, I, N) lua_getfield(L, I, N)
+
 /**
 * Set raw 
 */
@@ -201,6 +207,7 @@ inline int luax_istype(lua_State* L, int idx, const char* tname)
 #define luax_isnumber(L, i) luax_is(number, L, i)
 #define luax_isstring(L, i) luax_is(string, L, i)
 #define luax_istable(L, i) luax_is(table, L, i)
+#define luax_isnil(L, i) luax_is(nil, L, i)
 /**
 * To userdata. 
 */

@@ -503,7 +503,7 @@ namespace module
         luaopen_Font(L);
 
         // load whole lib 
-        luax_newlib(L, f); 
+        luax_newlib(L, f);
         
         return 1;
     }
